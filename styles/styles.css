@@ -1,0 +1,50 @@
+.root {
+    /* här ligger alla bilder och typsnitt */
+    --gsdgsdg (url: )
+}
+
+body {
+    display: grid;
+}
+
+.header-box {
+
+    .h1 {
+
+    }
+}
+
+/* .more-info {
+
+} */
+
+.main-image {
+    background-image: var();
+}
+
+.h2 {
+
+}
+
+.product-grid {
+    .main-product-image {
+        background-image: var();
+    }
+    .second-product-image {
+        background-image: var();
+    }
+    .third-product-image {
+        background-image: var();
+    }
+    .product-subheading {
+
+    }
+}
+
+/* .commentary-grid {
+
+} */
+
+footer {
+
+}
