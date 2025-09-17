@@ -1,15 +1,30 @@
-.root {
+:root {
     /* här ligger alla bilder och typsnitt */
-    --gsdgsdg (url: )
+    --stirring-cup-image:url("../images/Gemini_Generated_Image_Stirring_Cup.png");
+    --logo-image:url("../images/Gemini_Generated_Image_Logo.png")
+}
+h1 {
+    
 }
 
+h2 {
+
+}
+
+h3 {
+
+}
+header {
+    .logo {
+
+    }
+}
 body {
     display: grid;
 }
 
-.header-box {
-
-    .h1 {
+.sub-header-box {
+    p {
 
     }
 }
@@ -22,22 +37,32 @@ body {
     background-image: var();
 }
 
-.h2 {
-
-}
-
 .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(2 1fr);
+    width: 5000px;
+    height: 5000px;
+    /* & > * {
+        width: 2000px;
+        height: 2000px;
+    } */
     .main-product-image {
-        background-image: var();
+        background-image: var(--stirring-cup-image);
+        background-size: auto;
+        background-repeat: no-repeat;
+        border: 2px solid red;
     }
     .second-product-image {
         background-image: var();
+        border: 2px solid red;
     }
     .third-product-image {
         background-image: var();
+        border: 2px solid red;
     }
     .product-subheading {
-
+        border: 2px solid red;
     }
 }
 
