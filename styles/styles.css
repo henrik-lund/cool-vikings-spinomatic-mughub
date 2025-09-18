@@ -1,3 +1,8 @@
+* > {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     /* här ligger alla bilder och typsnitt */
     --stirring-cup-image:url("../images/Gemini_Generated_Image_Stirring_Cup.png");
@@ -5,8 +10,9 @@
     --travel-mug-image:url("../images/Gemini_Generated_Image_Travel_Mug.png");
     --temperature-mug-image:url("../images/Gemini_Generated_Image_Temperature_control.png");
 }
-h1 {
 
+h1 {
+    font-size: 3em;
 }
 
 h2 {
@@ -14,20 +20,23 @@ h2 {
 }
 
 h3 {
-
+    font-size: 1.5em;
 }
+
 header {
+    background-color: red;
     .logo {
+        background-image: var(--logo-image);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 10em;
 
     }
-}
-body {
-    display: grid;
 }
 
 .sub-header-box {
     p {
-
+        font-size: 1.3em;
     }
 }
 
@@ -41,28 +50,60 @@ body {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    height: 1000px;
+    grid-template-columns: 1fr;
     gap: 2em;
-    & > * {
-        background-size: contain;
+    justify-items: center;
+}
+
+.product-card > * {
+        background-size:cover;
+        height: 300px;
+        width: 300px;
         background-repeat: no-repeat;
         border: 2px solid red;
-    }
-    .main-product-image {
-        background-image: var(--stirring-cup-image);
-    }
-    .second-product-image {
-        background-image: var(--temperature-mug-image);
+}
 
-    }
-    .third-product-image {
-        background-image: var(--travel-mug-image);
+.remove-commenting {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
 
-    }
-    .product-subheading {
+.main-product-image {
+    background-image: var(--stirring-cup-image);
+}
 
+.second-product-image {
+    background-image: var(--temperature-mug-image);
+}
+
+.third-product-image {
+    background-image: var(--travel-mug-image);
+}
+
+figcaption {
+    & > * {
+        margin: 1em;
+    }
+    .h3-box {
+        width: auto;
+        height: auto;
+        background-color: hotpink;
+        border-radius: 7px;
+                text-align: center;
+    }
+}
+
+
+@media (min-width: 481px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* justify-content: center; */
     }
 }
 

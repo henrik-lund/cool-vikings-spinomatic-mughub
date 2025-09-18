@@ -6,22 +6,22 @@
     <title>Main page</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
-        <!-- top sticky header -->
-        <header>
-            <div class="logo"></div>
-            <div class="button?">
-                <p>button</p>
-            </div>
-        </header>
-        <!-- body is a main grid -->
+    <body>
 
-        <body>
-
+        <!-- main is a main grid -->
+        <main>
+        <!-- top sticky header -->            
+            <header>
+                <div class="logo"></div>
+                <div class="button?">
+                   <p>button</p>
+                </div>
+            </header>
             <!-- first header and text -->
-            <div class="sub-header-box">
+            <section class="sub-header-box">
                 <h1>What is your mug?</h1>
                 <p>At Mughub we specialize in making mugs that are specially designed for all types of individuals. Find a mug that suits your needs! </p>
-            </div>
+            </section>
 
             <!-- button if we got time-->
             <!-- <div class="more-info">
@@ -33,32 +33,54 @@
 
             <!-- header two -->
             <h2>Products</h2>
-
+            <div class="second-product-image"></div>
             <!-- all products -->
-            <div class="product-grid">
-                <div class="main-product-image"></div>
-                <div class="second-product-image"></div>
-                <div class="third-product-image"></div>
-                <div class="product-subheading">
-                    <h3></h3>
-                    <p></p>
+            <section class="product-grid">
+                <!-- spinomatic -->
+                <div class="product-card">
+                    <div class="main-product-image">
+                        <img src="" alt="Spinomatic self-stirring mug" class="remove-commenting">
+                    </div>
+
+                    <figcaption>
+                        <div class="h3-box">
+                        <h3>Spinomatic</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quasi voluptate neque nam laboriosam explicabo doloremque illo enim officiis cum eaque tempora veritatis, et non ea sapiente expedita tempore eos!</p>
+                    </figcaption>
                 </div>
-                <div class="product-subheading">
-                    <h3></h3>
-                    <p></p>
-                </div>
-                <div class="product-subheading">
-                    <h3></h3>
-                    <p></p>
-                </div>
-            </div>
+
+                <!-- temperature mug -->
+                <figure class="product-card">
+
+                    <div class="second-product-image">
+                        <img src="" alt="Celsitek temperature-controlling mug" class="remove-commenting">
+                    </div>
+
+                    <figcaption>
+                        <h3>Celsitek?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, accusantium non repellendus rem veritatis ipsum repellat et quo, magni commodi nostrum culpa harum dolor neque! Sunt tempora sed quasi mollitia?</p>
+                    </figcaption>
+                </figure>    
+
+                <!-- travel mug -->
+                <figure class="product-card">
+                    <div class="third-product-image"></div>
+                        <img src="" alt="Orbitron travel mug" class="remove-commenting">
+                    <figcaption>
+                        <h3>Orbitron?</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nam et minus at deleniti cum non earum cumque optio. Recusandae, distinctio. Vel neque repudiandae alias voluptate sed incidunt debitis mollitia.</p>
+                    </figcaption>
+                </figure>
+            </section>
 
             <!-- potential commetary -->
-             <!-- <div class="commentary-grid"></div> -->
+            <!-- <div class="commentary-grid"></div> -->
 
-             <!-- footer about us -->
+            <!-- footer about us -->
             <footer class="footer-grid">
                 <div>?</div>
             </footer>
-        </body>
+        </main>
+    </body>
 </html>
