@@ -1,31 +1,75 @@
+* > {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
-    /* här ligger alla bilder och typsnitt */
+    /* here are pictures, colors etc. */
     --stirring-cup-image:url("../images/Gemini_Generated_Image_Stirring_Cup.png");
-    --logo-image:url("../images/Gemini_Generated_Image_Logo.png")
-}
-h1 { background-color: brown;
-    
-}
-
-h2 {
-
-}
-
-h3 {
-
-}
-header {
-    .logo {
-
-    }
+    --logo-image:url("../images/Gemini_Generated_Image_Logo.png");
+    --travel-mug-image:url("../images/Gemini_Generated_Image_Travel_Mug.png");
+    --temperature-mug-image:url("../images/Gemini_Generated_Image_Temperature_control.png");
+    --background-image:url("../images/Gemini_Generated_Image_Smoke.png");
+    --header-background-col:gray;
+    --sub-header-background-col:gray;
+    --border-col-1:rgb(45, 45, 45);
+    --p-color-sub-header:white;
+    --p-color-figcaption:white;
 }
 body {
-    display: grid;
+    margin: 0;
+    background-color: rgb(196, 196, 196);
+
+}
+
+.page-content {
+    background-image: var(--background-image);
+    /* max-width: 1200px; */
+    margin: 0 5em;
+    /* padding: 0 1rem; */
+}
+
+main {
+    /* padding-left: 10%;
+    padding-right: 10%; */
+    /* border-left: 5em;
+    border-right: 5em; */
+    border-left: 5em solid transparent;
+    border-right: 5em solid transparent;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:sticky;
+    top: 0;
+    z-index: 10;
+
+    background-color:var(--header-background-col);
+    border: 2px solid var(--border-col-1);
+    border-radius: 10px;
+
+    .logo {
+        background-image: var(--logo-image);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 5em;
+        width: 10em;
+    }
 }
 
 .sub-header-box {
+    background-color:var(--sub-header-background-col);
+    padding-left: 5%;
+    padding-right: 5%;
+    h1 {
+        font-size: 3em;
+        text-align: center;
+    }
     p {
-
+        font-size: 1.3em;
+        color: var(--p-color-sub-header);
     }
 }
 
@@ -39,30 +83,64 @@ body {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3 1fr);
-    grid-template-rows: repeat(2 1fr);
-    width: 5000px;
-    height: 5000px;
-    /* & > * {
-        width: 2000px;
-        height: 2000px;
-    } */
-    .main-product-image {
-        background-image: var(--stirring-cup-image);
-        background-size: auto;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    justify-items: center;
+}
+
+.product-card > * {
+        background-size:cover;
+        height: 300px;
+        width: 300px;
         background-repeat: no-repeat;
-        border: 2px solid red;
+        border: 5px solid var(--border-col-1);
+        font-size: 1.5em;
+}
+
+.remove-commenting {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.main-product-image {
+    background-image: var(--stirring-cup-image);
+}
+
+.second-product-image {
+    background-image: var(--temperature-mug-image);
+}
+
+.third-product-image {
+    background-image: var(--travel-mug-image);
+}
+
+figcaption {
+    & > * {
+        margin: 1em;
     }
-    .second-product-image {
-        background-image: var();
-        border: 2px solid red;
+    .h3-box {
+        width: auto;
+        height: auto;
+        background-color: hotpink;
+        border-radius: 7px;
+                text-align: center;
     }
-    .third-product-image {
-        background-image: var();
-        border: 2px solid red;
+    p {
+        color: var(--p-color-figcaption);
     }
-    .product-subheading {
-        border: 2px solid red;
+}
+
+
+@media (min-width: 600px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* justify-content: center; */
     }
 }
 
