@@ -1,0 +1,15 @@
+:root { 
+    /* here are pictures, colors etc. */
+    --main-image:url();
+}
+/* .more-info {
+
+} */
+
+.main-image {
+    background-image: var(--main-image);
+}
+
+/* .commentary-grid {
+
+} */
