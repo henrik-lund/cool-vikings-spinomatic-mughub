@@ -3,7 +3,7 @@
     --stirring-cup-image:url("../images/Gemini_Generated_Image_Stirring_Cup.png");
     --logo-image:url("../images/Gemini_Generated_Image_Logo.png")
 }
-h1 {
+h1 { background-color: brown;
     
 }
 
