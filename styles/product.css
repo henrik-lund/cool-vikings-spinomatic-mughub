@@ -2,6 +2,7 @@
     /* här ligger alla bilder och typsnitt */
     --stirring-cup-image:url("../images/Gemini_Generated_Image_Stirring_Cup.png");
     --logo-image:url("../images/Gemini_Generated_Image_Logo.png")
+    
     }
     body{
         display: grid;
@@ -14,22 +15,36 @@
         min-height: 100dvh;
     }
     .header-box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         grid-area: header;
         padding: 0.5em;
         place-items: center;
         position: sticky;
         top: 0;
-        background-color: rgba(238, 238, 238, 0.708);
+        background-color: rgba(208, 205, 205, 0.848);
         
+        .separator{
+            /* flex-grow: 1; */
+        }
+        button{
+            align-items: flex-end;
+            text-decoration: none;
+            border: 1px solid black;
+            background-color: black;
+            color:white
+
+        }
     }
     .logo{
-        background-image: var(--logo-image);
+        /* background-image: var(--logo-image);
         border: 5px solid black;
         width: 5em;
         height: 5em;
         position: fixed;
         top: 0.5em;
-        left: 1em;
+        left: 1em; */
 
     }
     .main-product{
@@ -43,6 +58,7 @@
             height: 20em;
             width: 20em;
             border: 1px dashed hotpink;
+            
             
         }
 
@@ -71,9 +87,27 @@
     .footer-grid{
         display: grid;
         grid-template-columns:repeat(3, 1fr);
-        justify-content: space-between;
+        /* justify-content: space-between; */
         grid-area: footer;
         padding: 0.5em;
         border: 1px solid black;
     
+        .adress{
+            grid-column: 2;
+            place-items: center;
+
+        }
+        .footer-links{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            align-items: center;
+        }
+        .some-icons{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            place-items: center;
+            width: 100%;
+
+        }
 }
