@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produt page</title>
+    <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/product.css">
 </head>
 <body>
     <div class="page-content">
     <!-- first header and text -->
      <header class="header-box">
-        <h1>MugHub</h1>
         <div class="logo"></div>
+       <div>
         <button>Sign in</button>
         <button>Support</button>
+        </div> 
      </header>
 
      <main class="main-product-page">
@@ -24,14 +26,49 @@
             </div>
         
         <figcaption>
-            <h3 class="product-name">Spinomatic</h3>
+            <div class="h3-box"><h3>Spinomatic</h3>
+            </div>
             <div class="main-product-info">
-            Meet the Spinomatic - the self-stirring mug that does the work for you. With just the push of a button, Spinomatic creates a smooth, perfectly blended drink in seconds. No spoons, no mess, no effort. It's portable, stylish, and perfect for coffee, tea, hot chocolate, or even protein shakes. Whether you're running late for school, at your desk, or on the go, Spinomatic saves you time and makes your mornings easier.
-             </div>
-            <button class="buy-button">Buy now!</button>
+                <p>Meet the Spinomatic - the self-stirring mug that does the work for you. With just the push of a button, Spinomatic creates a smooth, perfectly blended drink in seconds. No spoons, no mess, no effort. It's portable, stylish, and perfect for coffee, tea, hot chocolate, or even protein shakes. Whether you're running late for school, at your desk, or on the go, Spinomatic saves you time and makes your mornings easier.</p>
+             <button class="buy-button">Buy now!</button> 
+            </div>
         </figcaption>
         </div>
-        </main>
+        
+        <section class="product-grid">
+            <h2>Other products</h2>
+            
+        
+            <figure class="product-card">
+
+                <div class="second-product-image">
+                    <img src="" alt="Celsitek temperature-controlling mug" class="remove-commenting">
+                </div>
+
+                <figcaption>
+                    <div class="h3-box">
+                        <h3>Celsitek</h3>
+                    </div>
+                    <p>Celsitek - the smart mug that keeps your drink hot for as long as you need. With built-in heating technology, Celsitek maintains the perfect temperature so every sip tastes just as warm as the first. </p>
+                </figcaption>
+            </figure>    
+
+                    
+            <figure class="product-card">
+                <div class="third-product-image">
+                    <img src="" alt="Orbitron travel mug" class="remove-commenting">
+                </div>  
+                        
+            <figcaption>
+                <div class="h3-box">
+                    <h3>Orbitron</h3>
+                </div>
+                <p>Orbitron keeps your drink at the right temperature for hours, whether you're commuting, hiking, or heading to class. Its leak-proof lid means no spills in your bag, and its sleek, lightweight design fits perfectly in your hand - and in any cup holder.</p>
+            </figcaption>
+
+            </figure>
+        </section>
+    </main>
         
 
 
@@ -46,6 +83,8 @@
         <div class="adress">
             <p>Lorem street</p>
             <p>123 45 Lorem</p>
+            <p>Open</p>
+            <p>08:00 - 16:00</p>
         </div>
         <div class="some-icons">
             <img src="images/instagram-svg.svg" alt="Instagram">
@@ -53,7 +92,7 @@
             <img src="images/x-svg.svg" alt="X">
         </div>
         
-         </footer>
+    </footer>
     </div>
     </body>
 </html>

@@ -15,6 +15,7 @@
     --border-col-1:rgb(45, 45, 45);
     --p-color-sub-header:white;
     --p-color-figcaption:white;
+    --footer-background-col:gray;
 }
 body {
     margin: 0;
@@ -115,12 +116,8 @@ header {
         font-size: 1.5em;
 }
 
-@media (min-width: 600px) {
-    .product-grid {
-        grid-template-columns: repeat(3, 1fr);
-        /* justify-content: center; */
-    }
-}
+
+
 
 figcaption {
     & > * {
@@ -144,6 +141,7 @@ figcaption {
 
 footer{
         display: grid;
+        background-color: var(--footer-background-col);
         grid-template-columns:repeat(3, 1fr);
         /* justify-content: space-between; */
         grid-area: footer;
@@ -153,19 +151,25 @@ footer{
         .adress{
             grid-column: 2;
             place-items: center;
+            color: white;
 
         }
         .footer-links{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3 , 1fr);
             justify-items: center;
             align-items: center;
+            text-decoration: none;
+            color: white;
+            gap: 1em;
+           
+            
         }
         .some-icons{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             place-items: center;
             width: 100%;
-
         }
 }
