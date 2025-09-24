@@ -3,16 +3,106 @@
         grid-area: main;
         place-items: center;
         padding: 0.5em;
+        
 
     }
-.buy-button{
-        display: grid;
-        border: 1px solid rgb(8, 8, 8);
-        background-color: rgb(0, 0, 0);
-        color: white;
-        margin-top: 1em;
-        border-radius: 2em;
-        font-weight: bold;
-        padding: 0.5em 1em;
-        }
+ 
+ .product-card > * {
+    display: grid;
+    grid-template-rows: 1fr;
+    background-size:cover;
+    height: auto;
+    width: auto;
+    background-repeat: no-repeat;
+    border: 5px solid var(--border-col-1);
+    font-size: 1.5em;
+}
+ .buy-button{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin-top: 1em;
+    border-radius: 2em;
+    font-weight: bold;
+    padding: 0.5em 1em
+}
+.main-product-image {
+    background-image: var(--stirring-cup-image);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    aspect-ratio: 6 / 5;
+    width: 100%;
+}
+.product-grid {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 2em;
+    justify-items: center; */
 
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: space-between;
+}
+.second-product-image {
+    /* background-image: var(--temperature-mug-image);
+    height: 300px;
+    width: auto; */
+    background-image: var(--temperature-mug-image);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+
+}
+.third-product-image {
+    /* background-image: var(--travel-mug-image);
+    height: 300px;
+    width: auto; */
+
+    background-image: var(--travel-mug-image);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+   
+}
+h2{
+    /* grid-column: span 3;
+    background-color: gray;
+    color:rgb(0, 0, 0);
+    border:1px solid gray;
+    border-radius: 0.3em;
+    padding: 0.6em; */
+
+    grid-column: 1; /* På små skärmar tar den bara upp en kolumn */
+    background-color: gray;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 0.3em;
+    padding: 0.6em;
+}
+/* @media (min-width: 600px) {
+    .product-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+} */
+
+@media (min-width: 777px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* Tre kolumner när skärmen är minst 600px */
+  }
+
+  h2 {
+    grid-column: span 3; /* Rubriken sträcker sig över alla tre kolumner */
+  }
+
+  .third-product-image {
+    grid-column: 3; /* Låt tredje bilden hamna i kolumn 3 */
+    justify-self: end;
+  }
+}

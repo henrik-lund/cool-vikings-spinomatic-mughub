@@ -15,7 +15,11 @@
     --border-col-1:rgb(45, 45, 45);
     --p-color-sub-header:white;
     --p-color-figcaption:white;
+<<<<<<< HEAD
     --h3-background-color:hotpink;
+=======
+    --footer-background-col:gray;
+>>>>>>> 7be61a00a112edd1409eeaeed1400d15dbd14a90
 }
 
 body {
@@ -95,8 +99,15 @@ main {
         background-repeat: no-repeat;
         border: 5px solid var(--border-col-1);
         font-size: 1.5em;
+<<<<<<< HEAD
     }
 }
+=======
+}
+
+
+
+>>>>>>> 7be61a00a112edd1409eeaeed1400d15dbd14a90
 
 figcaption {
     & > * {
@@ -120,6 +131,7 @@ figcaption {
 
 footer{
         display: grid;
+        background-color: var(--footer-background-col);
         grid-template-columns:repeat(3, 1fr);
         /* justify-content: space-between; */
         grid-area: footer;
@@ -129,19 +141,25 @@ footer{
         .adress{
             grid-column: 2;
             place-items: center;
+            color: white;
 
         }
         .footer-links{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3 , 1fr);
             justify-items: center;
             align-items: center;
+            text-decoration: none;
+            color: white;
+            gap: 1em;
+           
+            
         }
         .some-icons{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             place-items: center;
             width: 100%;
-
         }
 }
