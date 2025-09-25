@@ -1,25 +1,29 @@
-:root { 
-    /* here are pictures, colors etc. */
-    --main-image:url();
-}
-/* .more-info {
-
-} */
-
-.main-image {
-    background-image: var(--main-image);
+ .buy-button{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin-top: 1em;
+    border-radius: 2em;
+    font-weight: bold;
+    padding: 0.5em 1em
 }
 
-/* .commentary-grid {
-
-} */
- /* .main-page {
-    overflow: auto;
- } */
-
- @media (min-width: 600px) {
-    main .product-grid {
-        grid-template-columns: repeat(3, 1fr);
-        /* justify-content: center; */
-    }
- }
+.product-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    gap: 2em;
+    justify-items: center;
+    
+    img{
+    max-width: 1000px; 
+    width: 100%;     
+    height: auto;     
+    display: block;
+    margin: 0 auto; 
+    }   
+}
+/* @media (min-width: 777px) {
+  .product-container{
+    grid-template-columns: repeat(4, 1fr); 
+  } */
