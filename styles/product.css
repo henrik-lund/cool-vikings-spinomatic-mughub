@@ -1,10 +1,8 @@
 
 .main-product-page{
-        grid-area: main;
+        /* grid-area: main; */
         place-items: center;
         padding: 0.5em;
-        
-
     }
  
  .product-card > * {
@@ -31,25 +29,17 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    aspect-ratio: 6 / 5;
+    aspect-ratio: 6 / 2;
     width: 100%;
 }
 .product-grid {
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    gap: 2em;
-    justify-items: center; */
-
     display: grid;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
     justify-items: center;
     justify-content: space-between;
 }
 .second-product-image {
-    /* background-image: var(--temperature-mug-image);
-    height: 300px;
-    width: auto; */
+   
     background-image: var(--temperature-mug-image);
     background-size: contain;
     background-repeat: no-repeat;
@@ -59,10 +49,6 @@
 
 }
 .third-product-image {
-    /* background-image: var(--travel-mug-image);
-    height: 300px;
-    width: auto; */
-
     background-image: var(--travel-mug-image);
     background-size: contain;
     background-repeat: no-repeat;
@@ -72,37 +58,25 @@
    
 }
 h2{
-    /* grid-column: span 3;
-    background-color: gray;
-    color:rgb(0, 0, 0);
-    border:1px solid gray;
-    border-radius: 0.3em;
-    padding: 0.6em; */
-
-    grid-column: 1; /* På små skärmar tar den bara upp en kolumn */
+    grid-column: 1; 
     background-color: gray;
     color: black;
     border: 1px solid gray;
     border-radius: 0.3em;
     padding: 0.6em;
 }
-/* @media (min-width: 600px) {
-    .product-grid{
-        grid-template-columns: repeat(3, 1fr);
-    }
-} */
 
 @media (min-width: 777px) {
   .product-grid {
-    grid-template-columns: repeat(2, 1fr); /* Tre kolumner när skärmen är minst 600px */
+    grid-template-columns: repeat(2, 1fr); 
   }
 
   h2 {
-    grid-column: span 3; /* Rubriken sträcker sig över alla tre kolumner */
+    grid-column: span 3; 
   }
 
   .third-product-image {
-    grid-column: 3; /* Låt tredje bilden hamna i kolumn 3 */
+    grid-column: 3;
     justify-self: end;
   }
 }
