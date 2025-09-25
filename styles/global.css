@@ -56,7 +56,7 @@ header {
         background-repeat: no-repeat; */
         width: 350px;
     }
-    button{
+    .header-button{
         /* align-items: flex-end; */
         /* text-decoration: none; */
         border: 1px solid black;
@@ -115,9 +115,7 @@ img {
     clip: rect(0,0,0,0);
     border: 0;
 }
-.main-product-image {
-    background-image: var(--stirring-cup-image);
-}
+
 
 /* .product-grid {
     display: grid;
