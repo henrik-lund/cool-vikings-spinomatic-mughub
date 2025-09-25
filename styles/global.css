@@ -15,11 +15,7 @@
     --border-col-1:rgb(45, 45, 45);
     --p-color-sub-header:white;
     --p-color-figcaption:white;
-<<<<<<< HEAD
-    --h3-background-color:hotpink;
-=======
     --footer-background-col:gray;
->>>>>>> 7be61a00a112edd1409eeaeed1400d15dbd14a90
 }
 
 body {
@@ -65,7 +61,9 @@ main {
     border-right: 5em solid transparent;
     max-width: 100%; */
 }
-
+img {
+    width: 100%;
+}
 
 .sub-header-box {
     background-color:var(--sub-header-background-col);
@@ -81,7 +79,7 @@ main {
     }
 }
 
-.product-grid {
+/* .product-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -91,7 +89,10 @@ main {
     .product-grid {
     grid-template-columns: repeat(3, 1fr);
     }
-}
+} */
+
+
+
 
 .product-card {
     & > * {
@@ -99,15 +100,8 @@ main {
         background-repeat: no-repeat;
         border: 5px solid var(--border-col-1);
         font-size: 1.5em;
-<<<<<<< HEAD
     }
 }
-=======
-}
-
-
-
->>>>>>> 7be61a00a112edd1409eeaeed1400d15dbd14a90
 
 figcaption {
     & > * {
