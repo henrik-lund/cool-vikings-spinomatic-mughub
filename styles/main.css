@@ -8,7 +8,7 @@
     padding: 0.5em 1em
 }
 
-.product-container{
+/* .product-container{
     display: grid;
     grid-template-columns: 1fr;
     justify-content: space-between;
@@ -22,7 +22,7 @@
     display: block;
     margin: 0 auto; 
     }   
-}
+} */
 /* @media (min-width: 777px) {
   .product-container{
     grid-template-columns: repeat(4, 1fr); 
