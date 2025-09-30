@@ -5,8 +5,9 @@
     border-radius: 20px;
     font-weight: bold;
     padding: 30px;
-    font-size: 5em;
-    font-style: italic;
+    font-size: 2em;
+    width: fit-content;
+    justify-self: center;
 }
 .product-container {
     display: grid;

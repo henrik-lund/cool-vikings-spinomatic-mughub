@@ -5,11 +5,10 @@
 :root { 
     --header-background-col:rgb(190, 190, 190);
     --footer-background-col:rgb(190, 190, 190);
-    --body-background-col:rgb(232, 232, 232);    
-    --sub-header-background-col:rgb(181, 195, 193);
+    --body-background-col:rgb(232, 232, 232);
     --button-background-col: black;    
     --semitransparent-background-col: rgba(255, 255, 255, 0.308);
-    --h3-background-col: rgb(181, 195, 193);
+    --h-background-col: rgb(181, 195, 193);
     --p-color-v-1:white;
     --p-color-background: rgb(164, 164, 164);
     --border-col-v-1: rgb(255, 208, 0);
@@ -119,12 +118,14 @@ main {
     justify-self: center;
 }    
 .big-img-container {
+    display: grid;
+    justify-content: center;
     margin: 5px 0;
     margin-bottom: 50px;
     }
 .h-box {
     padding:0 1.5em;
-    background-color: var(--h3-background-col);
+    background-color: var(--h-background-col);
     border-radius: 0.5em;
     text-align: center;
     border: 1px solid var(--border-col-text);
@@ -167,7 +168,6 @@ footer{
 .adress{
     justify-self: center;
     text-align: center;
-    color:  black;  
     font-size: 1.5em;    
 }
 .some-icons {
